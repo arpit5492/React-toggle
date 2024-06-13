@@ -8,8 +8,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  button {
+  .font-button {
     cursor: pointer;
+    background-color: white;
+    border: none;
+    font-size: 1.2em;
   }
 
   .saveSubmit {
@@ -23,5 +26,22 @@
 
   .header {
     color: purple;
+  }
+
+  .font-button {
+    color: #ffa500;
+    background-color: black;
+    border: none;
+  }
+
+  .saveSubmit {
+
+    .save {
+      background-color: purple;
+    }
+
+    .submit {
+      background-color: cyan;
+    }
   }
 }

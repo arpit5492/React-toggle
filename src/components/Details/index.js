@@ -1,10 +1,15 @@
 import { useEffect, useState } from "react";
 import "./_details.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 export default function Details() {
   const [flag, setFlag] = useState(false);
   useEffect(() => {
     document.title = "Home";
+    // setTimeout(() => {
+    //   setFlag(!flag);
+    // }, 5000);
   }, []);
   return (
     <div className={flag ? "container theme-changer" : "container"}>
@@ -13,7 +18,9 @@ export default function Details() {
         <h1>Dark Mode Challenge</h1>
       </div>
       <div>
-        <button onClick={() => setFlag(!flag)}>Toggle</button>
+        <button className="font-button" onClick={() => setFlag(!flag)}>
+          <FontAwesomeIcon icon={flag ? faSun : faMoon} />
+        </button>
       </div>
       <div>
         <p>
@@ -39,8 +46,8 @@ export default function Details() {
         <input type="text" placeholder="Email" />
       </div>
       <div className="saveSubmit">
-        <button>Save</button>
-        <button>Submit</button>
+        <button className="save">Save</button>
+        <button className="submit">Submit</button>
       </div>
     </div>
   );
