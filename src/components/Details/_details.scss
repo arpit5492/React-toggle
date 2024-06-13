@@ -17,31 +17,13 @@
 
   .saveSubmit {
     margin-top: 0.7em;
-  }
-}
-
-.theme-changer {
-  background: black;
-  color: white;
-
-  .header {
-    color: purple;
-  }
-
-  .font-button {
-    color: #ffa500;
-    background-color: black;
-    border: none;
-  }
-
-  .saveSubmit {
 
     .save {
-      background-color: purple;
+      cursor: pointer;
     }
 
     .submit {
-      background-color: cyan;
+      cursor: pointer;
     }
   }
 }

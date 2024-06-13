@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./_details.scss";
+import "./_themeChanger.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 

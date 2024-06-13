@@ -1,0 +1,25 @@
+.theme-changer {
+  background: black;
+  color: white;
+
+  .header {
+    color: purple;
+  }
+
+  .font-button {
+    color: #ffa500;
+    background-color: black;
+    border: none;
+  }
+
+  .saveSubmit {
+
+    .save {
+      background-color: purple;
+    }
+
+    .submit {
+      background-color: cyan;
+    }
+  }
+}
